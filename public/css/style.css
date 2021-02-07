@@ -7,6 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body
+{
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+}
+
 header
 {
     background: #6ab0e9;
@@ -78,7 +85,27 @@ header
     transition: 0.3s;
 }
 
-.homebtn:hover
+.errorbtn
+{ 
+    position: relative;
+    left: 0;
+    width: 200px;
+    margin-top: 10px;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    background: #ced2d4;
+    transition: 0.3s;
+}
+
+
+.homebtn:hover,
+.errorbtn:hover
 {
     text-decoration: none;
     background: #0d3352;
@@ -140,6 +167,7 @@ header
 {
     width: 100%;
     background: #0d3352;
+    margin-top: auto;
 }
 
 .media
@@ -283,4 +311,14 @@ header
 .active
 {
     visibility: visible;
+}
+
+.errorbx
+{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }

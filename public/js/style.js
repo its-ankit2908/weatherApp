@@ -18,7 +18,7 @@ var  getweather = async(e) =>{
    else{
     
        try{
-       var url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=844522a9f71e49b2206829d167137684`;
+       var url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=844522a9f71e49b2206829d167137684`;
        var data = await fetch(url);
        var objData = await data.json();
        arrData = [objData];
