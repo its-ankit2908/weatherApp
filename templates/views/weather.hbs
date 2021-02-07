@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <title>weatherApp</title>
+  </head>
+  <body>
+      
+      <!-- header start -->
+       {{>header}}
+    <!-- header end -->
+    
+    <!-- content -->
+    <section class="home">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mx-3 p-3">
+                <div class="input-group">
+                    <div class="form-inline">
+                        <input type="text" name="searchbx" class="form-control searchbx" id="search" placeholder="Enter City Here..">
+                        <button type="button" class="btn btn-outline-dark" id="searchbtn" onclick="getweather()"  >Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+                <div class="weatherbx">
+                <div class="weathercontent">
+                    <div class="w-header">
+                         <h3 class="day text-muted" id="day">Wed</h3>
+                         <h3 class="time text-muted" id="time">5:00PM</h3>
+                    </div>
+                    <h3 class="city text-white" id="city">Pune,IN</h3>
+                    <div class="w-footer" id="w_footer">
+                        <h1 class="temp text-white" id="temp">25 &degC</h1>
+                        <h2 class="icon" id="icon"><i class="fas fa-cloud-sun text-white"></i></h2>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+   
+    {{!-- footer start --}}
+      
+      {{>footer}}
+
+    {{!-- footer end --}}
+
+
+</body>
+</html>

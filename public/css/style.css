@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    background: #6ab0e9;
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+    background: #0d3352;
+}
+
+.home
+{
+   position: relative;
+   background: #6ab0e9;
+   width: 100%;
+   min-height: 100vh;
+   overflow: hidden;
+}
+
+.home-content
+{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.home-content h3
+{
+    position: relative;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.home-content h2
+{
+   font-size: 3em;
+   text-transform: capitalize;
+}
+
+.home-content h2 span
+{
+   color: blue;
+}
+
+.homebtn
+{ 
+    position: relative;
+    left: 0;
+    width: 150px;
+    margin-top: 10px;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    background: #ced2d4;
+    transition: 0.3s;
+}
+
+.homebtn:hover
+{
+    text-decoration: none;
+    background: #0d3352;
+    color: #fff;
+    
+}
+
+
+.fa-snowflake:nth-child(1)
+{
+    animation: rot 2s linear infinite;
+    color: #fff;
+}
+
+@keyframes rot
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-snowflake:nth-child(2)
+{
+    animation: antirot 2s linear infinite;
+    color: #fff;
+}
+
+@keyframes antirot
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.navbar-brand,
+.nav-item a
+{
+    transition: 0.5s;
+}
+
+.navbar-brand:hover,
+.nav-item a:hover
+{
+  color: #6ab0e9 !important;
+  transform: scale(1.1);
+}
+
+.footer
+{
+    width: 100%;
+    background: #0d3352;
+}
+
+.media
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.media li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.media li a{
+ 
+    font-size: 16px;
+    color: #fff;
+}
+
+.media li a:hover
+{
+   color: #6ab0e9;
+}
+
+.cpyright
+{
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+.imgbx img
+{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+   width: 100%;
+   height: 100%;
+   
+}
+
+.input-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.searchbx
+{
+    position: relative;
+    padding: 10px;
+    max-width: 500px !important;
+    font-size: 16px;
+}
+
+.weatherbx
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #222;
+}
+
+.weathercontent
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+        
+}
+
+.weathercontent .w-header
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    background: #000;
+}
+
+.weathercontent .w-header h3
+{
+    font-size: 1.2em;
+}
+
+.weathercontent .city
+{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px;
+    width: 100%;
+    line-height: 2.5em;
+}
+
+.weathercontent .w-footer
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.weathercontent .w-footer .temp,
+.weathercontent .w-footer .icon
+{
+   font-size: 3em;
+
+}
+
+
+.hide
+{
+    visibility: hidden;
+}
+
+.active
+{
+    visibility: visible;
+}
